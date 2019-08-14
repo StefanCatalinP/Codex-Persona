@@ -1,0 +1,20 @@
+[
+    {
+      "id": "getId()",
+      "userName": "admin",
+      "password": "admin",
+      "surName": "Mr.Admin",
+      "email": "admin@reyno.co.uk",
+      "RoleId": "0"
+
+    },
+    {
+      "id": "getId()",
+      "userName": "user",
+      "password": "user",
+      "surName" : "John",
+      "email": "user@reyno.co.uk",
+      "RoleId": "1"
+
+    }
+  ]

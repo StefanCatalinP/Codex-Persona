@@ -1,0 +1,43 @@
+<template>
+    <div class="card">
+        <div class="card-header text-white bg-primary">
+            <h3>Register</h3>
+        </div>
+        <div class="card-body">
+            <form role="form">
+                <div class="form-group">
+                    <label class="col-sm-3 col-form-label">Username</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="enter username" class="form-control" value.bind="user.userName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="enter password" class="form-control" value.bind="user.password">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 col-form-label">Surname</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="last name" class="form-control" value.bind="user.surName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="email" class="form-control" value.bind="user.email">
+                    </div>
+                </div>
+
+            </form>
+            <div>
+                <button class="btn btn-danger float-left" click.delegate="register()">Register</button>
+            </div>
+        </div>
+    </div>
+</template>
