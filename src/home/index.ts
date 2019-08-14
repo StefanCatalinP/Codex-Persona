@@ -33,7 +33,13 @@ export class Index {
         const users = await this.api.getUsers();
         if (users) {
           this.users = users;
-          this.importUsers();
+          if(localStorage.length == 0){
+            console.log('Users have been loaded into localstorage')
+            this.importUsers(); 
+          } else {
+            console.log('Users already loaded into localstorage')
+          }
+
         }
       }
 
@@ -41,14 +47,6 @@ export class Index {
     importUsers() {
 
         localStorage.setItem('Users', JSON.stringify(this.users));
-        sessionStorage.setItem('Users', JSON.stringify(this.users));
-        create_cookie('Users', this.users);
-
-
-        function create_cookie(cname, cvalue) {
-
-            document.cookie = cname + "=" + JSON.stringify(cvalue) + ";" + ";path=/";
-        }
 
     }
 

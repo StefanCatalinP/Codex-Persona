@@ -13,7 +13,7 @@ interface User {
     email: string;
 
 }
-debugger
+
 @autoinject
 export class login {
 
